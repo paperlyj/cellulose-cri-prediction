@@ -8,7 +8,8 @@ This repository contains R scripts and data files for estimating the crystallini
 
 - **IR Summary.xlsx**  
   The main dataset contains IR spectra and corresponding crystallinity index (CrI) values for microcrystalline cellulose (MCC) samples, prepared by varying the ratio of amorphous and crystalline cellulose via ball milling and mixing.  
-  The data covers a CrI range from 0% (fully amorphous) to ~82% (highly crystalline).
+  Mixture samples were prepared using MCC combined with three different amorphous standards: 120-minute ball-milled MCC, xylan powder, and lignin powder.  
+  The dataset covers a CrI range from 0% (fully amorphous) to ~82% (highly crystalline).
 
 ---
 
@@ -24,13 +25,13 @@ This repository contains R scripts and data files for estimating the crystallini
 
 ## Methodology Summary
 
-- MCC samples were ball-milled to generate cellulose with varying crystallinity, mixed in controlled ratios to create a comprehensive dataset.
+- MCC samples were ball-milled to generate cellulose with varying crystallinity, mixed in controlled ratios with amorphous standards (ball-milled MCC, xylan, and lignin) to create a comprehensive dataset.
 - IR spectra were collected in the 4000–600 cm⁻¹ range and preprocessed with Savitzky-Golay second derivatives and L2 normalization.
 - The dataset was split by sample identity to prevent data leakage; training and testing were performed on distinct samples.
 - PLSR, DT, RF, and MLP models were trained and evaluated using cross-validation and multiple random seeds for robustness.
 - Feature importance analysis (Mean Decrease in Impurity for RF) was conducted to identify informative spectral regions.
 - Models trained on selected spectral regions (e.g., 1400–900 cm⁻¹) showed improved performance and reduced computational cost.
-- MLP demonstrated the best balance of accuracy and robustness across various cellulose materials, including lignocellulosic pulps and cellulose nanomaterials.
+- MLP demonstrated the best balance of accuracy and robustness across various cellulose materials, including lignocellulosic pulps, cellulose nanomaterials, and mixtures with xylan and lignin.
 
 ---
 
