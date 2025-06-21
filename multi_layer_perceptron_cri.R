@@ -1,5 +1,7 @@
 # --------------------------------------------
 # MLP Model for Cellulose Crystallinity Prediction
+# Author: [Yong Ju Lee]
+# Date: [2025-06-21]
 # --------------------------------------------
 
 library(openxlsx)
