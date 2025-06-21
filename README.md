@@ -1,6 +1,6 @@
 # Cellulose Crystallinity Estimation Using Infrared Spectroscopy and Machine Learning
 
-This repository contains R scripts and data files for estimating the crystallinity index (CrI) of cellulose materials based on infrared (IR) spectroscopy combined with machine learning (ML) models. The study explores the use of Partial Least Squares Regression (PLSR), Random Forest (RF), and Multilayer Perceptron (MLP) algorithms to develop fast, cost-effective, and accurate methods for cellulose crystallinity prediction.
+This repository contains R scripts and data files for estimating the crystallinity index (CrI) of cellulose materials based on infrared (IR) spectroscopy combined with machine learning (ML) models. The study explores the use of Partial Least Squares Regression (PLSR), Decision Tree (DT), Random Forest (RF), and Multilayer Perceptron (MLP) algorithms to develop fast, cost-effective, and accurate methods for cellulose crystallinity prediction.
 
 ---
 
@@ -27,7 +27,7 @@ This repository contains R scripts and data files for estimating the crystallini
 - MCC samples were ball-milled to generate cellulose with varying crystallinity, mixed in controlled ratios to create a comprehensive dataset.
 - IR spectra were collected in the 4000–600 cm⁻¹ range and preprocessed with Savitzky-Golay second derivatives and L2 normalization.
 - The dataset was split by sample identity to prevent data leakage; training and testing were performed on distinct samples.
-- PLSR, DT, RF and MLP models were trained and evaluated using cross-validation and multiple random seeds for robustness.
+- PLSR, DT, RF, and MLP models were trained and evaluated using cross-validation and multiple random seeds for robustness.
 - Feature importance analysis (Mean Decrease in Impurity for RF) was conducted to identify informative spectral regions.
 - Models trained on selected spectral regions (e.g., 1400–900 cm⁻¹) showed improved performance and reduced computational cost.
 - MLP demonstrated the best balance of accuracy and robustness across various cellulose materials, including lignocellulosic pulps and cellulose nanomaterials.
